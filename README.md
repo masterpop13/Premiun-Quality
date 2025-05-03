@@ -30,7 +30,7 @@
     <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="imagen1.jpg" class="d-block w-100" alt="Auto 1">
+                <img src="automovil_rojo.jpg" class="d-block w-100" alt="Auto 1">
             </div>
             <div class="carousel-item">
                 <img src="imagen2.jpg" class="d-block w-100" alt="Auto 2">
