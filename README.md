@@ -32,13 +32,13 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
             
-<img src="imagenes/S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
+<img src="imagenes/S10-2-removebg-preview.png" width="100" height="100"  class="d-block w-100" alt="Auto 1">
         </div>
         <div class="carousel-item">
-            <img src="imagenes/Fiorino-9-removebg-preview.png" class="d-block w-100" alt="Auto 2">
+            <img src="imagenes/Fiorino-9-removebg-preview.png" width="100" height="100" class="d-block w-100" alt="Auto 2">
         </div>
         <div class="carousel-item">
-            <img src="imagenes/3-96-removebg-preview.png" class="d-block w-100" alt="Auto 3">
+            <img src="imagenes/3-96-removebg-preview.png" width="100" height="100" class="d-block w-100" alt="Auto 3">
         </div>
     </div>
 </div>
