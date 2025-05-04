@@ -47,13 +47,13 @@
     <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
+                <img src="imagenes/S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
             </div>
             <div class="carousel-item">
-                <img src="Fiorino-9-removebg-preview.png" alt="Auto 2">
+                <img src="imagenes/Fiorino-9-removebg-preview.png" alt="Auto 2">
             </div>
             <div class="carousel-item">
-                <img src="3-96-removebg-preview.png" class="d-block w-100" alt="Auto 3">
+                <img src="imagenes/3-96-removebg-preview.png" class="d-block w-100" alt="Auto 3">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
