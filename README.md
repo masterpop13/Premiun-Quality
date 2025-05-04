@@ -25,7 +25,7 @@ margin: 0;
 <body>
 
    <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg bg-violeta text-white p-4">
+<nav class="navbar navbar-expand-lg bg-violeta text-black">
         <div class="container">
             <a class="navbar-brand" href="#">Autos Premium</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
