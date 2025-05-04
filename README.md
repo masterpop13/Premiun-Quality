@@ -50,7 +50,7 @@
                 <img src="/imagenes/S10-2-removebg-preview.png" class="d-block w-50" alt="Auto 1">
             </div>
             <div class="carousel-item">
-                <img src="/imagenes/Fiorino-9-removebg-preview.png" class="d-block w-100" alt="Auto 2">
+                <img src="/imagenes/Fiorino-9-removebg-preview.png" class="d-block w-50" alt="Auto 2">
             </div>
             <div class="carousel-item">
                 <img src="/imagenes/3-96-removebg-preview.png" class="d-block w-50" alt="Auto 3">
