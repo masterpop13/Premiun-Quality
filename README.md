@@ -45,25 +45,18 @@
 
     <!-- Carrusel de imágenes -->
     <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/imagenes/S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
-            </div>
-            <div class="carousel-item ">
-                <img src="/imagenes/Fiorino-9-removebg-preview.png" class="d-block w-100" alt="Auto 2">
-            </div>
-            <div class="carousel-item ">
-                <img src="/imagenes/3-96-removebg-preview.png" class="d-block w-100" alt="Auto 3">
-            </div> 
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/imagenes/S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+            <img src="/imagenes/Fiorino-9-removebg-preview.png" class="d-block w-100" alt="Auto 2">
+        </div>
+        <div class="carousel-item">
+            <img src="/imagenes/3-96-removebg-preview.png" class="d-block w-100" alt="Auto 3">
+        </div>
     </div>
-
+</div>
     <!-- Sección de inventario -->
     <div class="container mt-5">
         <h2 class="text-center">Nuestro Inventario</h2>
