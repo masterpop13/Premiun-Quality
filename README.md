@@ -44,10 +44,11 @@
     </nav>
 
     <!-- Carrusel de imágenes -->
-    <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
+ <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="/imagenes/S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
+            
+<img src="/imagenes/S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
         </div>
         <div class="carousel-item">
             <img src="/imagenes/Fiorino-9-removebg-preview.png" class="d-block w-100" alt="Auto 2">
