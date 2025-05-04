@@ -5,21 +5,6 @@
     <title>Concesionaria Autos Premium</title>
     <!-- Agregar Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-        .navbar-nav .nav-link {
-            padding-top: 0.75rem;
-            padding-bottom: 0.75rem;
-        }
-
- .nav-item {
-margin: 0;
-            padding: 0;
-        }
-
- .nav-link {
-            font-size: 1rem;
-        }
-    </style>
 
 </head>
 <body>
@@ -47,13 +32,13 @@ margin: 0;
         <div class="carousel-inner">
             <div class="carousel-item active">
             
-<img src="/imagenes/S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
+<img src="imagenes/S10-2-removebg-preview.png" class="d-block w-100" alt="Auto 1">
         </div>
         <div class="carousel-item">
-            <img src="/imagenes/Fiorino-9-removebg-preview.png" class="d-block w-100" alt="Auto 2">
+            <img src="imagenes/Fiorino-9-removebg-preview.png" class="d-block w-100" alt="Auto 2">
         </div>
         <div class="carousel-item">
-            <img src="/imagenes/3-96-removebg-preview.png" class="d-block w-100" alt="Auto 3">
+            <img src="imagenes/3-96-removebg-preview.png" class="d-block w-100" alt="Auto 3">
         </div>
     </div>
 </div>
