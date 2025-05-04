@@ -11,12 +11,12 @@
             padding-bottom: 0.75rem;
         }
 
-        .nav-item {
-            margin: 0;
+ .nav-item {
+margin: 0;
             padding: 0;
         }
 
-        .nav-link {
+ .nav-link {
             font-size: 1rem;
         }
     </style>
@@ -25,7 +25,7 @@
 <body>
 
    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Autos Premium</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -33,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             
-                <ul class="navbar-nav ms-auto">
+   <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Inventario</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Financiación</a></li>
