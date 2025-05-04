@@ -25,13 +25,13 @@ margin: 0;
 <body>
 
    <!-- Barra de navegación -->
- <nav class="navbar navbar-expand-lg navbar-indigo-600 bg-indigo-600 text-white p-4"> 
-        <div class="container">
-            <a class="navbar-brand" href="#">Autos Premium</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+<nav class="navbar navbar-expand-lg bg-violeta text-white p-4"> 
+  <div class="container">
+    <a class="navbar-brand text-white" href="#">Autos Premium</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
             
    <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
