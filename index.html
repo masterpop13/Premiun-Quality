@@ -11,6 +11,27 @@
         .navbar-nav .nav-link {
             color: white !important;
         }
+        .contenedor {
+    width: 300px; /* Ajustar el ancho según la necesidad */
+    height: 200px; /* Ajustar la altura según la necesidad */
+    position: relative;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-superpuesta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Asegurarse de que se muestre por encima */
+    width: 50px; /* Ajustar el tamaño según la necesidad */
+    height: 50px; /* Ajustar el tamaño según la necesidad */
+    object-fit: cover; /* Opcional: Ajustar el tamaño de la imagen dentro del contenedor */
+}
+
     </style>
 
 
@@ -19,10 +40,16 @@
 
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #57339b;">
-        <div class="container">
+
+        
+        <div class="Contenedor">
             
-            <img src="logos/logo_amarillo.png"  style="width: 200px; height: 200px; border-radius: 50%;" >
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            
+        <img src="logos/logo_amarillo.png"  style="width: 500px; height: 500px; border-radius: 50%;" alt="Imagen superpuesta" class="imagen-superpuesta" >
+            
+        <div class="container">
+            <img src="logos/logo_amarillo.png"  style="width: 50px; height: 50px; border-radius: 50%;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,6 +61,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </nav>
 
     <!-- Carrusel de imágenes -->
