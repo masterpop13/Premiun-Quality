@@ -14,7 +14,7 @@
         .contenedor {
     width: 300px; /* Ajustar el ancho según la necesidad */
     height: 200px; /* Ajustar la altura según la necesidad */
-    position: relative;
+
 }
 
 .imagen-principal {
@@ -39,19 +39,15 @@
 <body>
 
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #57339b;">
-
-        
-        <div class="Contenedor">
-            
-            
-        <img src="logos/logo_amarillo.png"  style="width: 500px; height: 500px; border-radius: 50%;" alt="Imagen superpuesta" class="imagen-superpuesta" >
-            
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #57339b; height: 50px;">
         <div class="container">
-            <img src="logos/logo_amarillo.png"  style="width: 50px; height: 50px; border-radius: 50%;">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class= "contenedor">
+                <img src="logos/logo_amarillo.png" style="width: 300px; height: 300px; "class="imagen-superpuesta" alt="Logo Superpuesto">
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
@@ -61,7 +57,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+           
     </nav>
 
     <!-- Carrusel de imágenes -->
