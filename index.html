@@ -47,7 +47,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class= "contenedor">
-                <img src="logos/logo_amarillo.png" style="width: 190px; height: 290px; "class="imagen-superpuesta" alt="Logo Superpuesto">
+                <img src="logos/logo_amarillo.png" style="width: 200px; height: 250px; "class="imagen-superpuesta" alt="Logo Superpuesto">
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -60,6 +60,52 @@
         </div>
            
     </nav>
+
+    <div class="container mt-3">
+  <div id="inicio" class="seccion text-center mb-4">
+    <h1 class="display-4">Bienvenido</h1>
+    <p class="lead">¡Descubrí nuestras promociones especiales!</p>
+  </div>
+
+  <!-- Galería de Promos -->
+
+   <div class="galeria-scroll">
+    <img src="imagenes/promos/compra 3 llevate 4.jpg" alt="Promo 1">
+    <img src="imagenes/promos/50 descuento en alineacion y balanceo.jpg" alt="Promo 2">
+    <img src="imagenes/promos/polarizado premiun.jpg" alt="Promo 3">
+    <img src="imagenes/promos/30 de descuento en mano de obra del taller.jpg" alt="Promo 4">
+  </div>
+</div>
+
+<style>
+.galeria-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.galeria-scroll img {
+  flex: 0 0 auto;
+  width: 500px;          /* Imagen grande */
+  height: auto;
+  object-fit: contain;   /* Que no se deformen */
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+</style>
+
+
+
+
+
+
+
+
 
     <!-- Carrusel de imágenes -->
      <center>
@@ -183,11 +229,7 @@
         <button class="btn btn-danger" onclick="mostrarSeccion('contacto')">Contacto</button>
     </div>
 
-    <div class="container mt-5">
-        <div id="inicio" class="seccion">
-            <h2>Bienvenido</h2>
-            <p>Esta es la sección de inicio con información general.</p>
-        </div>
+   
 
         <div id="servicios" class="seccion">
             <h2>Nuestros Servicios</h2>
