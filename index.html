@@ -38,6 +38,55 @@
 </head>
 <body style="background-image: url('imagenes/Fondo/Consider a beautiful landscape, sunset, or a serene beach view_.jpg'); background-size: cover; background-attachment: fixed;">
 
+<audio id="musicaFondo" autoplay loop muted>
+  <source src="musica/City.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<!-- Botón para pausar/reanudar música -->
+<button id="controlMusica" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #57339b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 9999;
+">
+  🔊 Música
+</button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const musica = document.getElementById("musicaFondo");
+    const boton = document.getElementById("controlMusica");
+
+    // Establecer el volumen al 30%
+    musica.volume = 0.10;
+
+    // Habilitar sonido después del primer clic
+    document.body.addEventListener('click', () => {
+      musica.muted = false;
+      musica.play().catch(err => console.log("Error de reproducción:", err));
+    }, { once: true });
+
+    // Controlar reproducción/pausa
+    boton.addEventListener('click', () => {
+      if (musica.paused) {
+        musica.play();
+        boton.textContent = "🔊 Música";
+      } else {
+        musica.pause();
+        boton.textContent = "🔇 Música";
+      }
+    });
+  });
+</script>
+
+
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #57339b; height: 50px;">
         <div class="container">
