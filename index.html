@@ -38,12 +38,36 @@
 </head>
 <body style="background-image: url('imagenes/Fondo/Consider a beautiful landscape, sunset, or a serene beach view_.jpg'); background-size: cover; background-attachment: fixed;">
 
+<!-- Intro animada con video de fondo -->
+<div id="intro-screen" style="position: fixed; inset: 0; background: black; z-index: 9999; display: flex; align-items: center; justify-content: center; overflow: hidden; transition: opacity 1s;">
+  
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline id="introVideo" style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="videos/PQ.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <!-- Contenido encima del video -->
+  <div style="z-index: 2; text-align: center;">
+    <img src="/logos/logo_intro.gif" alt="Logo animado" style="width: 180px; animation: spin 4s linear infinite;">
+    <h1 style="color: gold; margin-top: 20px;">Bienvenidos a Premium Quality</h1>
+    <button onclick="ocultarIntro()" style="margin-top: 20px; padding: 10px 20px; background-color: gold; color: black; border: none; border-radius: 5px; cursor: pointer;">Entrar</button>
+  </div>
+</div>
+
+<!-- Música de la intro (Blinding Lights) -->
+<audio id="introMusic" autoplay loop>
+  <source src="/musica/blinding_lights.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<!-- Música principal (City) -->
 <audio id="musicaFondo" autoplay loop muted>
   <source src="musica/City.mp3" type="audio/mpeg">
   Tu navegador no soporta audio HTML5.
 </audio>
 
-<!-- Botón para pausar/reanudar música -->
+<!-- Botón para controlar la música -->
 <button id="controlMusica" style="
   position: fixed;
   bottom: 20px;
@@ -55,36 +79,62 @@
   border-radius: 10px;
   cursor: pointer;
   z-index: 9999;
+  display: none; /* Oculto hasta que se presione Entrar */
 ">
   🔊 Música
 </button>
 
+<!-- Estilo de animación -->
+<style>
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+</style>
+
+<!-- Lógica de intro y música -->
 <script>
+  const introScreen = document.getElementById('intro-screen');
+  const introMusic = document.getElementById('introMusic');
+  const mainMusic = document.getElementById('musicaFondo');
+  const botonMusica = document.getElementById('controlMusica');
+
+  // Reproducir intro automáticamente sin esperar clic
   document.addEventListener('DOMContentLoaded', () => {
-    const musica = document.getElementById("musicaFondo");
-    const boton = document.getElementById("controlMusica");
+    introMusic.volume = 0.3;
+    introMusic.play().catch(e => console.log("Error de audio en intro:", e));
 
-    // Establecer el volumen al 30%
-    musica.volume = 0.10;
+    mainMusic.volume = 0.3;
 
-    // Habilitar sonido después del primer clic
-    document.body.addEventListener('click', () => {
-      musica.muted = false;
-      musica.play().catch(err => console.log("Error de reproducción:", err));
-    }, { once: true });
-
-    // Controlar reproducción/pausa
-    boton.addEventListener('click', () => {
-      if (musica.paused) {
-        musica.play();
-        boton.textContent = "🔊 Música";
+    botonMusica.addEventListener('click', () => {
+      if (mainMusic.paused) {
+        mainMusic.play();
+        botonMusica.textContent = "🔊 Música";
       } else {
-        musica.pause();
-        boton.textContent = "🔇 Música";
+        mainMusic.pause();
+        botonMusica.textContent = "🔇 Música";
       }
     });
   });
+
+  function ocultarIntro() {
+    // Ocultar intro visual
+    introScreen.style.opacity = 0;
+    setTimeout(() => introScreen.style.display = 'none', 1000);
+
+    // Detener música de intro
+    introMusic.pause();
+    introMusic.currentTime = 0;
+
+    // Activar música principal y mostrar botón
+    mainMusic.muted = false;
+    mainMusic.play().catch(err => console.log("Error al iniciar música principal:", err));
+    botonMusica.style.display = 'block';
+  }
 </script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- Barra de navegación -->
@@ -319,8 +369,6 @@
         <p> 2025 Autos Premium | Contacto: PremiumQuality@gmail.com</p>
     </footer>
 
-    <!-- Agregar Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
