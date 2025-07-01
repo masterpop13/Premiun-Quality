@@ -31,9 +31,39 @@
     height: 50px; /* Ajustar el tamaño según la necesidad */
     object-fit: cover; /* Opcional: Ajustar el tamaño de la imagen dentro del contenedor */
 }
-
     </style>
+  <meta charset="UTF-8">
+  <title>Video Banner</title>
+  <style>
+    header {
+      position: relative;
+      height: 50vh; /* altura completa de la pantalla */
+      overflow: hidden;
+    }
 
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .contenido-banner {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      top: 30%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+    }
+  </style>
 
 </head>
 <body style="background-image: url('imagenes/Fondo/Consider a beautiful landscape, sunset, or a serene beach view_.jpg'); background-size: cover; background-attachment: fixed;">
@@ -63,6 +93,15 @@
         </div>
            
     </nav>
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="videos/PQ.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+    <div class="contenido-banner"> 
+    </div>
+  </header>
+
 
     <div class="container mt-3">
   <div id="inicio" class="seccion text-center mb-4">
@@ -244,7 +283,7 @@
             <p>Aquí puedes ver nuestro catálogo de productos.</p>
         </div>
 
-        <div id="Financiacion" class="seccion">
+        <div id="financiacion" class="seccion">
             <h2>Contáctanos</h2>
             <p>Déjanos tu mensaje y te responderemos pronto.</p>
             <form>
