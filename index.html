@@ -55,9 +55,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Inventario</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Financiación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Usados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">0KM</a></li>
                 </ul>
             </div>
         </div>
@@ -226,13 +226,13 @@
     <!-- Sección de Contenedor menu de abajo -->
 
     <div class="container text-center mt-4">
-        <button class="btn btn-primary" onclick="mostrarSeccion('inicio')">Financiación</button>
         <button class="btn btn-secondary" onclick="mostrarSeccion('servicios')">Mecánico</button>
-        <button class="btn btn-success" onclick="mostrarSeccion('productos')">Turnos</button>
-        <button class="btn btn-danger" onclick="mostrarSeccion('contacto')">Contacto</button>
+        <button class="btn btn-success" onclick="mostrarSeccion('productos')">Repuestos</button>
+        <button class="btn btn-primary" onclick="mostrarSeccion('productos')">Accesorios</button>
+        <button class="btn btn-danger" onclick="mostrarSeccion('financiacion')">Financiación</button>
     </div>
 
-   
+
 
         <div id="servicios" class="seccion">
             <h2>Nuestros Servicios</h2>
@@ -244,19 +244,24 @@
             <p>Aquí puedes ver nuestro catálogo de productos.</p>
         </div>
 
-        <div id="contacto" class="seccion">
+        <div id="Financiacion" class="seccion">
             <h2>Contáctanos</h2>
             <p>Déjanos tu mensaje y te responderemos pronto.</p>
             <form>
                 <input type="text" class="form-control" placeholder="Nombre">
                 <input type="email" class="form-control mt-2" placeholder="Correo Electrónico">
                 <textarea class="form-control mt-2" placeholder="Mensaje"></textarea>
-                <button class="btn btn-success mt-3">Enviar</button>
+                <button class="btn btn-success mt-3" onclick="mostrarMensaje()">Enviar</button>
             </form>
         </div>
     </div>
 
-    <script>    
+    <script>
+    function mostrarMensaje() {
+      alert("¡Formulario enviado con éxito!");
+    }
+    </script>
+    <script>
         function mostrarSeccion(id) {
             document.querySelectorAll('.seccion').forEach(seccion => {
                 seccion.style.display = 'none';
