@@ -84,10 +84,8 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Registro</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Usados</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">0KM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Usados</a></li>    
                 </ul>
             </div>
         </div>
@@ -182,8 +180,6 @@
       </center> 
 
 
-
-
     <!-- Sección de inventario -->
     <div class="container mt-5">
         <h2 class="text-center">Nuestro Inventario</h2>
@@ -196,7 +192,7 @@
                         <p class="card-text">Año: 2021, Naftero</p>
                         <p class="card-text">Kilometros: 31.300km</p>
                         <p class="card-text">Version: 1.6 Sport THP Tiptronic.</p>
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <a href="#" class="btn" style="background-color: #57339b; color: white;">Ver detalles</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +204,7 @@
                         <p class="card-text">Año: 2021, Naftero</p>
                         <p class="card-text">Kilometros: 48.729 km</p>
                         <p class="card-text">Version: Big Bend 1.5</p>
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <a href="#" class="btn" style="background-color: #57339b; color: white;">Ver detalles</a>
                     </div>
                 </div>
             </div>
@@ -220,7 +216,7 @@
                         <p class="card-text">Año: 2020, Naftero</p>
                         <p class="card-text">Kilometros: 148.000 km</p>
                         <p class="card-text">Version: XLS 1.5 MT</p>
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <a href="#" class="btn" style="background-color: #57339b; color: white;">Ver detalles</a>
                     </div>
                 </div>
             </div>
@@ -232,7 +228,7 @@
                         <p class="card-text">Año: 2016, Naftero</p>
                         <p class="card-text">Kilometros: 95.000 km</p>
                         <p class="card-text">Version: Mpi black 1.0</p>
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <a href="#" class="btn" style="background-color: #57339b; color: white;">Ver detalles</a>
                     </div>
                 </div>
             </div>
@@ -244,7 +240,7 @@
                         <p class="card-text">Año: 2018, Naftero</p>
                         <p class="card-text">Kilometros: 89.000 km</p>
                         <p class="card-text">Version: Exclusive cvt 3.5 </p>
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <a href="#" class="btn" style="background-color: #57339b; color: white;">Ver detalles</a>
                     </div>
                 </div>
             </div>
@@ -256,7 +252,7 @@
                         <p class="card-text">Año: 2017, Naftero</p>
                         <p class="card-text">Kilometros: 131.170 km</p>
                         <p class="card-text">Version: Sedan 1.4</p>
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <a href="#" class="btn" style="background-color: #57339b; color: white;">Ver detalles</a>
                     </div>
                 </div>
             </div>
@@ -265,10 +261,11 @@
     <!-- Sección de Contenedor menu de abajo -->
 
     <div class="container text-center mt-4">
-        <button class="btn btn-secondary" onclick="mostrarSeccion('servicios')">Mecánico</button>
-        <button class="btn btn-success" onclick="mostrarSeccion('productos')">Repuestos</button>
-        <button class="btn btn-primary" onclick="mostrarSeccion('productos')">Accesorios</button>
-        <button class="btn btn-danger" onclick="mostrarSeccion('financiacion')">Financiación</button>
+        <button class="btn" style="background-color: #57339b; color: white;" onclick="mostrarSeccion('servicios')">Mecánico</button>
+        <button class="btn" style="background-color: #57339b; color: white;"onclick="mostrarSeccion('productos')">Repuestos</button>
+        <button class="btn" style="background-color: #57339b; color: white;" onclick="mostrarSeccion('productos')">Accesorios</button>
+        <button class="btn" style="background-color: #57339b; color: white;"onclick="mostrarSeccion('financiacion')">Financiación</button>
+        <button class="btn" style="background-color: #57339b; color: white;"onclick="mostrarSeccion('contactacto')">Contactanos</button>
     </div>
 
 
@@ -283,7 +280,7 @@
             <p>Aquí puedes ver nuestro catálogo de productos.</p>
         </div>
 
-        <div id="financiacion" class="seccion">
+        <div id="contactacto" class="seccion">
             <h2>Contáctanos</h2>
             <p>Déjanos tu mensaje y te responderemos pronto.</p>
             <form>
@@ -298,6 +295,7 @@
     <script>
     function mostrarMensaje() {
       alert("¡Formulario enviado con éxito!");
+      // Aquí podrías agregar lógica para enviar el formulario si fuera necesario
     }
     </script>
     <script>
@@ -315,7 +313,7 @@
     <!-- Pie de página -->
     <footer class="text-center p-3 mt-5" style="background-color: #57339b; color: #ffcc00;">
         <p> 2025 Autos Premium | Contactanos: <a href="https://www.premiumquality@gmail.com" target="_blank">
-        <img src="email.png" style="width: 30px; margin: 0 10px;">
+        <img src="email.png" style="width: 30px; margin: 0 10px;"> 
       </a>
 </p>
     </footer>
